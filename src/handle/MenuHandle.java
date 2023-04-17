@@ -44,9 +44,14 @@ public class MenuHandle {
                 in ra menu cua user*/
                 inputHandle(scanner, username, arrayList, menu, b);
             }
-            /*         neu username hoac password sai thi in ra*/
-            else {
+            /*         neu password sai thi in ra*/
+            else if (!MenuHandle.isPasswordTaken(password, arrayList) && MenuHandle.isUsernameTaken(username, arrayList)) {
                 isFailLogin(scanner, menu, arrayList);
+            }
+            /* neu username sai*/
+            else {
+                System.out.println("Nhập lại đê");
+                login(scanner, arrayList);
             }
         }
     }
