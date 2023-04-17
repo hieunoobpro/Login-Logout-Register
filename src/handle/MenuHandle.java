@@ -123,7 +123,7 @@ public class MenuHandle {
             }
         }
     }
-/*doi email*/
+    /*doi email*/
     public void changeEmail(Scanner scanner, ArrayList<UsersFirstList> arrayList, boolean b) {
         System.out.println("Nhập email muốn đổi sang theo đúng cú pháp: ");
         do {
@@ -140,7 +140,7 @@ public class MenuHandle {
             }
         } while (b == true);
     }
-/*doi password*/
+    /*doi password*/
     public void changePassword(Scanner scanner, ArrayList<UsersFirstList> arrayList, boolean b) {
         System.out.print("Đổi password theo đúng cú pháp: ");
         do {
@@ -156,7 +156,7 @@ public class MenuHandle {
             }
         } while (b == true);
     }
-/*dang ky*/
+    /*dang ky*/
     public ArrayList<UsersFirstList> register(Scanner scanner, ArrayList<UsersFirstList> arrayList) {
         boolean b = false;
         String password;
