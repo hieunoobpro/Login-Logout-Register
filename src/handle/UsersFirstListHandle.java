@@ -14,6 +14,7 @@ public class UsersFirstListHandle {
         do {
             System.out.println("Nhập username thứ " + (i + 1));
             name = scanner.nextLine();
+           /* kiem tra username da ton tai chua*/
             if(MenuHandle.isUsernameTaken(name, arrayList)){
                 System.out.println("Username đã tồn tại");
                 b = true;
@@ -25,6 +26,7 @@ public class UsersFirstListHandle {
         do {
             System.out.println("Nhập password: ");
             password =scanner.nextLine();
+          /*  kiem tra dieu kien cua password*/
             if (!MenuHandle.isValidPassword(password)) {
                 System.out.println("Password không hợp lệ!");
                 b = true;
@@ -36,6 +38,7 @@ public class UsersFirstListHandle {
         do {
             System.out.println("Nhập email: ");
             email = scanner.nextLine();
+     /*       kiem tra dieu kien va su ton tai cua email*/
             if (!MenuHandle.isValidEmail(email) || MenuHandle.isEmailTaken(email,arrayList)) {
                 System.out.println("Email không hợp lệ hoặc đã tồn tại!");
                 b = true;
